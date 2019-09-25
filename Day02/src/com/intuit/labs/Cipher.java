@@ -1,6 +1,9 @@
 package com.intuit.labs;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Cipher {
@@ -52,6 +55,11 @@ public class Cipher {
 	}
 	private String encryptComplexWay(String word) {
 		String encrypted = "";
+		List<String> letters = Arrays.asList(word.split(""));
+		Collections.shuffle(letters);
+		encrypted = String.join("", letters);
+		
+		/*
 		String[] letters = word.split("");
 		int count = letters.length - 1;
 		while(count >= 0) {
@@ -61,8 +69,7 @@ public class Cipher {
 				letters[randomIndex] = null;
 				count--;
 			}
-
-		}
+		}*/
 		//"elloh"->"hello"
 		complexStore.put(encrypted, word);
 		return encrypted;
