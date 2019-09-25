@@ -18,6 +18,8 @@ public class CarUser {
 					myCar.color + ", " + 
 					myCar.electric);
 	
+		//Car.start();
+		
 		myCar.start();
 		myCar.drive(100);
 	
