@@ -2,6 +2,16 @@ public class Account {
 	double balance;
 	int withdrawCount;
 	
+	//constructor overloading
+	Account() {
+		balance = 10000;
+	}
+	
+//	Account() {
+//		//check the guy who recommended you
+//		//initialize balance
+//	}
+	
 	Account(double initialBalance) {
 		if(initialBalance < 10000) {
 			//TALK ABOUT THIS LATER ONLY
