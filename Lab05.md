@@ -1,4 +1,4 @@
-* Let's design a Cipher class that encrypt and decrypt words
+* Let's design a Cipher class that encrypts and decrypts words
 * The cipher methods will take a __single word__ and encrypt or decrypt them. 
 * While creating a cipher you pass information if it's a __simple or complex__ cipher
 * Simple cipher and complex ciphers have different ways of encrypting and decrypting words
